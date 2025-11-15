@@ -3,20 +3,35 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Circles UI Kit</title>
+  <title>Circles UI Kit - Modern SASS Component Library by Brian Walker</title>
+  <meta name="description" content="A modern, professional UI style guide built with SASS featuring typography, buttons, forms, images, and responsive grid system. Crafted by Brian Walker.">
+  <meta name="author" content="Brian Walker">
+  <meta name="keywords" content="UI Kit, SASS, CSS, Component Library, Web Design, Brian Walker, Style Guide">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Circles UI Kit - Modern SASS Component Library">
+  <meta property="og:description" content="A professional UI style guide demonstrating SASS best practices and modern web design.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brianwalkerdev.github.io/modern-web-page-sass">
+  
+  <!-- Preconnect to Google Fonts for better performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="container">
   <header class="row">
     <div class="col-3">
-      <a class="link" href="/">
-        <img class="img img-logo" alt="circles logo" src="images/logo.png">
+      <a class="link" href="/" aria-label="Home">
+        <img class="img img-logo" alt="Circles UI Kit logo" src="images/logo.png">
       </a>
     </div>
     <div class="col-9">
-      <nav class="nav">
+      <nav class="nav" role="navigation" aria-label="Main navigation">
         <a class="nav-link" href="#type">Typography</a>
         <a class="nav-link" href="#buttons">Buttons</a>
         <a class="nav-link" href="#forms">Form</a>
@@ -36,92 +51,106 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-8">
-      <div class="card">
-        <h4 id="type" class="headline-secondary">Typography</h4>
-        <h1 class="headline-primary">Take a look at this amazing headline</h1>
-        <p>This is a typical paragraph for the UI Kit. <a href="#" class="link">Here is what a link might look like</a>.
-          The
-          typical font family for this kit is Lato. This kit is intended for clean and refreshing web layouts.
-          No jazz hands here, just the essentials to make dreams come true, with minimal clean web design. The kit comes
-          fully equipped with everything from full responsive media styling to buttons to form fields. <em>I enjoy using
-            italics as well from time to time</em>.
-          Feel free to create the most amazing designs ever with this kit. I truly hope you enjoy not only the kit but
-          this
-          amazing paragraph as well. :)</p>
-        <blockquote class="blockquote">You know what really gets me going? A really nice set of block quotes. That's
-          right, block quotes that say, "Hey,
-          I'm an article you want to read and nurture."</blockquote>
+  <main>
+    <div class="row">
+      <div class="col-8">
+        <div class="card">
+          <h2 id="type" class="headline-secondary">Typography</h2>
+          <h1 class="headline-primary">Take a look at this amazing headline</h1>
+          <p>This is a typical paragraph for the UI Kit. <a href="#" class="link">Here is what a link might look like</a>.
+            The
+            typical font family for this kit is Lato. This kit is intended for clean and refreshing web layouts.
+            No jazz hands here, just the essentials to make dreams come true, with minimal clean web design. The kit comes
+            fully equipped with everything from full responsive media styling to buttons to form fields. <em>I enjoy using
+              italics as well from time to time</em>.
+            Feel free to create the most amazing designs ever with this kit. I truly hope you enjoy not only the kit but
+            this
+            amazing paragraph as well. :)</p>
+          <blockquote class="blockquote">You know what really gets me going? A really nice set of block quotes. That's
+            right, block quotes that say, "Hey,
+            I'm an article you want to read and nurture."</blockquote>
+        </div>
+      </div>
+      <div class="col-4">
+        <form class="form" aria-labelledby="forms">
+          <legend id="forms" class="headline-secondary">Form Elements</legend>
+          <img class="img-avatar" src="images/avatar.png" alt="User avatar placeholder">
+          <label class="hidden" for="username">Username:</label>
+          <input class="input" type="text" id="username" name="username" placeholder="Username" required aria-required="true">
+          <label class="hidden" for="password">Password:</label>
+          <input class="input" type="password" id="password" name="password" placeholder="Password" required aria-required="true">
+          <button class="btn default" type="submit">Login</button>
+        </form>
       </div>
     </div>
-    <div class="col-4">
-      <form class="form">
-        <legend id="forms" class="headline-secondary">Form Elements</legend>
-        <img class="img-avatar" src="images/avatar.png" alt="Avatar">
-        <label class="hidden" for="username">Username:</label>
-        <input class="input" type="text" id="username" placeholder="Username">
-        <label class="hidden" for="password">Password:</label>
-        <input class="input" type="password" id="password" placeholder="Password">
-        <button class="btn default" type="submit" value="Login">Login</button>
-      </form>
+
+    <section>
+      <h2 id="images" class="headline-secondary">Images</h2>
+
+      <div class="row">
+        <div class="col-6">
+          <img class="img img-frame" src="images/image.png" alt="Sample decorative image with frame styling">
+        </div>
+        <div class="col-6">
+          <img class="img img-avatar" src="images/avatar.png" alt="User avatar example with circular styling">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="buttons" class="headline-secondary">Buttons</h2>
+
+      <div class="row">
+        <div class="col-12">
+          <button class="btn default" type="button">default</button>
+          <button class="btn success" type="button">success</button>
+          <button class="btn error" type="button">error</button>
+          <button class="btn warning" type="button">warning</button>
+          <button class="btn info" type="button">info</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="grid" class="headline-secondary">Grid System</h2>
+
+      <div class="row">
+        <div class="col-12 theme">.col-12</div>
+      </div>
+      <div class="row">
+        <div class="col-6 theme">.col-6</div>
+        <div class="col-6 theme">.col-6</div>
+      </div>
+      <div class="row">
+        <div class="col-4 theme">.col-4</div>
+        <div class="col-4 theme">.col-4</div>
+        <div class="col-4 theme">.col-4</div>
+      </div>
+      <div class="row">
+        <div class="col-3 theme">.col-3</div>
+        <div class="col-3 theme">.col-3</div>
+        <div class="col-3 theme">.col-3</div>
+        <div class="col-3 theme">.col-3</div>
+      </div>
+      <div class="row">
+        <div class="col-5 theme">.col-5</div>
+        <div class="col-7 theme">.col-7</div>
+      </div>
+      <div class="row">
+        <div class="col-8 theme">.col-8</div>
+        <div class="col-4 theme">.col-4</div>
+      </div>
+      <div class="row">
+        <div class="col-7 theme centered">.centered .col-7</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="row">
+    <div class="col-12" style="text-align: center; padding: 20px 0; color: #777; font-size: 0.9em;">
+      <p>Built with ❤️ by <a href="https://brianwalker.dev" class="link" target="_blank" rel="noopener noreferrer">Brian Walker</a></p>
     </div>
-  </div>
-
-  <h4 id="images" class="headline-secondary">Images</h4>
-
-  <div class="row">
-    <div class="col-6">
-      <img class="img img-frame" src="images/image.png" alt="sample image">
-    </div>
-    <div class="col-6">
-      <img class="img img-avatar" src="images/avatar.png" alt="Avatar">
-    </div>
-  </div>
-
-  <h4 id="buttons" class="headline-secondary">Buttons</h4>
-
-  <div class="row">
-    <div class="col-12">
-      <button class="btn default">default</button>
-      <button class="btn success">success</button>
-      <button class="btn error">error</button>
-      <button class="btn warning">warning</button>
-      <button class="btn info">info</button>
-    </div>
-  </div>
-
-  <h4 id="grid" class="headline-secondary">Grid System</h4>
-
-  <div class="row">
-    <div class="col-12 theme">.col-12</div>
-  </div>
-  <div class="row">
-    <div class="col-6 theme">.col-6</div>
-    <div class="col-6 theme">.col-6</div>
-  </div>
-  <div class="row">
-    <div class="col-4 theme">.col-4</div>
-    <div class="col-4 theme">.col-4</div>
-    <div class="col-4 theme">.col-4</div>
-  </div>
-  <div class="row">
-    <div class="col-3 theme">.col-3</div>
-    <div class="col-3 theme">.col-3</div>
-    <div class="col-3 theme">.col-3</div>
-    <div class="col-3 theme">.col-3</div>
-  </div>
-  <div class="row">
-    <div class="col-5 theme">.col-5</div>
-    <div class="col-7 theme">.col-7</div>
-  </div>
-  <div class="row">
-    <div class="col-8 theme">.col-8</div>
-    <div class="col-4 theme">.col-4</div>
-  </div>
-  <div class="row">
-    <div class="col-7 theme centered">.centered .col-7</div>
-  </div>
+  </footer>
 
 </body>
 

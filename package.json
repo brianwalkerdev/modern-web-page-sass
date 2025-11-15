@@ -1,19 +1,43 @@
 {
-  "name": "techdegree-project-4",
+  "name": "modern-web-page-sass",
   "version": "1.0.0",
-  "description": "A web style guide which shows how various colors, buttons and columns will be displayed on a website. Incorporates a SASS stylesheet for enhanced color functions and optimized loading times. Project four of Treehouse Techdegree.",
-  "main": "index.js",
+  "description": "A modern, professional UI style guide built with SASS demonstrating modular CSS architecture, component-based styling, and responsive design patterns. Perfect for showcasing clean web design and SASS best practices.",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "sass scss/styles.scss css/styles.css --style compressed",
+    "watch": "sass --watch scss/styles.scss:css/styles.css",
+    "build:dev": "sass scss/styles.scss css/styles.css",
+    "test": "echo \"No tests specified\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bwalkerwebdev/Techdegree-Project-4.git"
+    "url": "git+https://github.com/brianwalkerdev/modern-web-page-sass.git"
   },
-  "author": "Brian Walker",
-  "license": "ISC",
+  "keywords": [
+    "sass",
+    "scss",
+    "css",
+    "ui-kit",
+    "style-guide",
+    "responsive-design",
+    "web-design",
+    "frontend",
+    "component-library",
+    "modular-css",
+    "brian-walker",
+    "portfolio"
+  ],
+  "author": {
+    "name": "Brian Walker",
+    "url": "https://brianwalker.dev",
+    "email": "contact@brianwalker.dev"
+  },
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bwalkerwebdev/Techdegree-Project-4/issues"
+    "url": "https://github.com/brianwalkerdev/modern-web-page-sass/issues"
   },
-  "homepage": "https://github.com/bwalkerwebdev/Techdegree-Project-4#readme"
+  "homepage": "https://brianwalkerdev.github.io/modern-web-page-sass",
+  "devDependencies": {
+    "sass": "^1.94.0"
+  }
 }
