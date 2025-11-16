@@ -1,243 +1,102 @@
-# Circles UI Kit - Modern SASS Component Library
+# Circles UI Kit
 
-> **A professional, modern UI style guide showcasing SASS best practices and modular CSS architecture**
+A modern, responsive UI component library built with SASS demonstrating clean CSS architecture and design patterns.
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://brianwalkerdev.github.io/modern-web-page-sass)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Built with SASS](https://img.shields.io/badge/built%20with-SASS-ff69b4.svg)](https://sass-lang.com/)
+**[View Live Demo →](https://brianwalkerdev.github.io/modern-web-page-sass)**
 
 ![Circles UI Kit Preview](images/thumbnail.png)
 
-## 🎯 Overview
+## About
 
-Circles UI Kit is a comprehensive, production-ready style guide that demonstrates professional web design patterns and SASS architecture. Built by [Brian Walker](https://brianwalker.dev), this project showcases clean code, component-based styling, and responsive design principles perfect for modern web applications.
+This project showcases a comprehensive style guide featuring reusable UI components built with modular SASS. It demonstrates skills in CSS preprocessing, responsive design, and component-based architecture — all essential for modern web development.
 
-**Live Demo:** [https://brianwalkerdev.github.io/modern-web-page-sass](https://brianwalkerdev.github.io/modern-web-page-sass)
+## Features
 
-## ✨ Features
+- 🎨 **Five Button Variants** - Default, success, error, warning, and info styles
+- 📝 **Form Components** - Styled inputs with accessibility features
+- 📐 **12-Column Grid System** - Flexible, responsive layout system
+- 🖼️ **Image Styling** - Avatar circles and framed images
+- 📱 **Mobile-First Design** - Responsive across all devices
+- ♿ **Accessible** - Semantic HTML with ARIA labels and keyboard navigation
+- ⚡ **Optimized** - Compressed CSS output for production
 
-### Design Components
-- **Typography System** - Beautiful, scalable type hierarchy with Lato font family
-- **Button Variants** - Five distinct button styles (default, success, error, warning, info) with hover effects
-- **Form Elements** - Accessible, styled form inputs with hidden labels and modern design
-- **Image Styling** - Avatar circles and framed images with consistent styling
-- **Responsive Grid** - Flexible 12-column grid system with media query breakpoints
+## Tech Stack
 
-### Technical Features
-- 📦 Modular SCSS architecture with partials and imports
-- 🎨 SASS variables for easy theming and customization
-- 🔧 Mixins for reusable style patterns
-- 📱 Mobile-first responsive design
-- ♿ Accessibility-focused HTML with ARIA labels
-- 🚀 Optimized build process with compressed CSS output
-- 🎭 Smooth transitions and hover effects
-- 🔍 SEO-optimized meta tags and semantic HTML
+- **HTML5** - Semantic markup
+- **SASS/SCSS** - CSS preprocessing with variables and mixins
+- **CSS3** - Modern styling with transitions and animations
+- **Node.js & npm** - Build tools and dependency management
 
-## 🛠️ Tech Stack
+## Installation
 
-| Technology | Purpose |
-|------------|---------|
-| **HTML5** | Semantic markup structure |
-| **SASS/SCSS** | Advanced CSS preprocessing |
-| **CSS3** | Modern styling and animations |
-| **Node.js** | Build tool runtime |
-| **npm** | Package management |
-| **Google Fonts** | Lato font family |
+```bash
+# Clone the repository
+git clone https://github.com/brianwalkerdev/modern-web-page-sass.git
+cd modern-web-page-sass
 
-## 📁 Project Structure
+# Install dependencies
+npm install
 
-```
-modern-web-page-sass/
-├── scss/                      # SASS source files
-│   ├── base/                  # Base styles and resets
-│   │   ├── _normalize.scss    # CSS normalization
-│   │   ├── _typography.scss   # Type styles and hierarchy
-│   │   └── _index.scss        # Base imports
-│   ├── components/            # UI components
-│   │   ├── _buttons.scss      # Button styles
-│   │   ├── _forms.scss        # Form element styles
-│   │   ├── _images.scss       # Image styling
-│   │   ├── _navigation.scss   # Navigation components
-│   │   ├── _grid.scss         # Grid system
-│   │   ├── _media-queries.scss # Responsive breakpoints
-│   │   └── _index.scss        # Component imports
-│   ├── utilities/             # Utilities and helpers
-│   │   ├── _variables.scss    # SASS variables
-│   │   ├── _mixins.scss       # Reusable mixins
-│   │   └── _index.scss        # Utility imports
-│   └── styles.scss            # Main SASS entry point
-├── css/                       # Compiled CSS output
-│   └── styles.css             # Production stylesheet
-├── images/                    # Image assets
-│   ├── logo.png               # UI Kit logo
-│   ├── avatar.png             # Avatar example
-│   ├── image.png              # Sample image
-│   └── thumbnail.png          # Project preview
-├── index.html                 # Main HTML file
-├── package.json               # npm configuration
-├── .gitignore                 # Git ignore rules
-└── README.md                  # This file
+# Build CSS from SASS
+npm run build
 ```
 
-## 🚀 Installation
+## Usage
 
-### Prerequisites
-- Node.js (v14 or higher)
-- npm (comes with Node.js)
-
-### Setup Instructions
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/brianwalkerdev/modern-web-page-sass.git
-   cd modern-web-page-sass
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Build the CSS**
-   ```bash
-   npm run build
-   ```
-
-4. **Start development** (optional - watch for changes)
-   ```bash
-   npm run watch
-   ```
-
-5. **Open in browser**
-   - Open `index.html` in your preferred browser
-   - Or use a local server like Live Server in VS Code
-
-## 📖 Usage
-
-### Building for Production
-Compile and minify SASS to compressed CSS:
+**Build for production:**
 ```bash
 npm run build
 ```
 
-### Development Mode
-Watch for SASS changes and auto-compile:
+**Watch mode (auto-compile on changes):**
 ```bash
 npm run watch
 ```
 
-### Development Build
-Compile SASS without compression (for debugging):
+**Development build (uncompressed):**
 ```bash
 npm run build:dev
 ```
 
-### Customizing Styles
+Open `index.html` in your browser to view the style guide.
 
-#### Modify Colors
-Edit `scss/utilities/_variables.scss`:
-```scss
-$button-default: #51ddfc;
-$button-success: #63cc82;
-$button-error: #e4757a;
-// Add your custom colors...
+## Deployment
+
+This is a static site that can be deployed to any static hosting platform:
+
+### GitHub Pages (Free)
+Already configured! Push to the `main` branch and GitHub Actions will auto-deploy to:
+```
+https://brianwalkerdev.github.io/modern-web-page-sass
 ```
 
-#### Add New Components
-1. Create a new file in `scss/components/`
-2. Import it in `scss/components/_index.scss`
-3. Run `npm run build` to compile
+### Netlify
+1. Connect your GitHub repository
+2. Build command: `npm run build`
+3. Publish directory: `.` (root directory)
 
-#### Adjust Breakpoints
-Modify media queries in `scss/utilities/_variables.scss`:
-```scss
-$brk-narrow: '(min-width: 768px)';
-$brk-wide: '(min-width: 1024px)';
-```
+### Vercel
+1. Import your GitHub repository
+2. Build command: `npm run build`
+3. Output directory: `.` (root directory)
 
-## 🎨 Component Usage Examples
+All files (`index.html`, `css/`, `images/`) are static and ready to deploy.
 
-### Buttons
-```html
-<button class="btn default">Default Button</button>
-<button class="btn success">Success Button</button>
-<button class="btn error">Error Button</button>
-```
+## Screenshots
 
-### Grid System
-```html
-<div class="row">
-  <div class="col-6">Half width</div>
-  <div class="col-6">Half width</div>
-</div>
-```
+**Desktop View:**
+![Desktop Layout](https://github.com/user-attachments/assets/f9b16fe7-3efb-4374-98d8-35dfaa538124)
 
-### Form Elements
-```html
-<form class="form">
-  <input class="input" type="text" placeholder="Username">
-  <button class="btn default" type="submit">Submit</button>
-</form>
-```
+**Full Page:**
+![Complete UI Kit](https://github.com/user-attachments/assets/0d33cd03-abac-447b-b9c3-5a59a6297c29)
 
-## 🗺️ Roadmap
+## Contact
 
-- [x] Core component library
-- [x] Responsive grid system
-- [x] Professional documentation
-- [x] SEO optimization
-- [ ] Dark mode theme toggle
-- [ ] Additional button variants
-- [ ] Advanced form components (select, radio, checkbox)
-- [ ] JavaScript interactivity
-- [ ] Animation library
-- [ ] Component documentation site
-
-## 🤝 Contributing
-
-Contributions are welcome! This project is open for improvements and new features.
-
-### How to Contribute
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Contribution Guidelines
-- Follow existing code style and structure
-- Use meaningful commit messages
-- Test your changes across browsers
-- Update documentation as needed
-- Ensure SASS compiles without errors
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👤 Author
-
-**Brian Walker**
-
-- Website: [brianwalker.dev](https://brianwalker.dev)
-- Email: contact@brianwalker.dev
-- GitHub: [@brianwalkerdev](https://github.com/brianwalkerdev)
-- Portfolio: Professional full-stack developer specializing in modern web technologies
-
-## 🙏 Acknowledgements
-
-- **[SASS](https://sass-lang.com/)** - Powerful CSS preprocessor
-- **[Normalize.css](https://necolas.github.io/normalize.css/)** - CSS reset foundation
-- **[Google Fonts](https://fonts.google.com/)** - Lato font family
-- **Treehouse** - Original project inspiration from Techdegree program
+**Brian Walker**  
+📧 contact@brianwalker.dev  
+🌐 [brianwalker.dev](https://brianwalker.dev)  
+💼 [GitHub Portfolio](https://github.com/brianwalkerdev)
 
 ---
 
-<div align="center">
-
-**⭐ Star this repository if you find it helpful!**
-
-Built with ❤️ by [Brian Walker](https://brianwalker.dev) | [View More Projects](https://github.com/brianwalkerdev)
-
-</div>
+Built with ❤️ using SASS | MIT License
